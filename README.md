@@ -56,11 +56,11 @@ These are files that were in the last snapshot (aka); they can be in one of the 
 ![Screenshots](https://github.com/manujose94/gitmanual/blob/master/img/changes_in_files.PNG?raw=true)
 
 
-**Staged** -> Untracked: 
+**Staged** -> **Untracked**: 
 ``git reset HEAD a.html
 ``
 
-**Modified** -> Unmodified:
+**Modified** -> **Unmodified**:
 ``
 git checkout -- a.html
 ``
@@ -102,7 +102,7 @@ git branch -a
         39895b5 (HEAD -> mi-rama-manu) fixed estado and datapicker edititem
         f9b465a (origin/mi-rama-manu, origin/master, master) User Deploy    
 
-### How **Push Firts time** to github account
+### How **Push First time** to github account
 
     git init
 
@@ -114,7 +114,7 @@ git branch -a
 
     git push origin master --force
 
-###  **After firts time**, online command:
+###  **After first time**, online command:
 
     git commit -am 'API send email'
 
@@ -167,4 +167,23 @@ This only updates your local feature branch. To update it on GitHub, push your c
 ```bash
 $ git push origin <feature-branch>
 ```
-       
+# Problems and Solutions
+## 1.Files that are not added to the commit
+
+When use the command: ``git add .``  and then launch this comment in terminal:
+```bash
+PS C:\Users\Manu\Desktop\ITBA_BACKUP> git init
+Initialized empty Git repository in C:/Users/Manu/Desktop/ITBA_BACKUP/.git/
+PS C:\Users\Manu\Desktop\ITBA_BACKUP> git add .
+warning: LF will be replaced by CRLF in Persistence JDBC/paw-2019a-6/Bancalet/.project.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Persistence JDBC/paw-2019a-6/Bancalet/.settings/org.eclipse.m2e.core.prefs.
+The file will have its original line endings in your working directory.
+```
+The problem is a **line break CR/LF**, because its deferent in Windows. Then we must make that git ignore this line break:
+
+``git config core.autocrlf false``
+
+In this moment, all file appear green. So its okay.
+
+
