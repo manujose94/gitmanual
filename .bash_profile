@@ -1,4 +1,4 @@
-# General Aliases
+# General Aliases Manu
 
 alias ls='ls -GFha '
 alias cdg='cd ~/git '
