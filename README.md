@@ -1,6 +1,6 @@
 # Control de Versiones
 
-## .git Folder
+## Git Folder
 
 ![Screenshots](https://github.com/manujose94/gitmanual/blob/master/img/carpeta_git.PNG?raw=true)
         
@@ -11,7 +11,7 @@ The folder heads -> contain a local branches (name branch and the last commit re
 File HEAD -> Refenrence to a branch tag or actual commit of workspace.
 (Cada vez que hacemos "git checkout" y cambiamos de rama, ese archivo se va actualizando.)
 
-## The Default State
+### The Default State
 ![Screenshots](https://github.com/manujose94/gitmanual/blob/master/img/commit_branches.PNG?raw=true)
 
     Where refence in file HEAD, point to a master. master with last commit.
@@ -26,7 +26,7 @@ Now, wether performed the command "**git commit**", this is result:
 
 
 
-## Git – File states
+### Git – File states
 
 **Tracked files**
 
@@ -65,7 +65,7 @@ These are files that were in the last snapshot (aka); they can be in one of the 
 git checkout -- a.html
 ``
 
-## Command line git
+### Command line git
 
 Start command "git" in project path (example: C:\Users\Manu\ITBA\paw-2019a-6)
 
@@ -173,7 +173,7 @@ ___
 
 _A list of my commonly used Git commands_
 
-*If you are interested in my Git aliases, have a look at my `.bash_profile`, found here: https://github.com/joshnh/bash_profile/blob/master/.bash_profile*
+*If you are interested in my Git aliases, have a look at my `.bash_profile`, found here: https://github.com/manujose94/gitmanual/blob/master/.bash_profile*
 
 --
 
