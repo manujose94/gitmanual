@@ -131,7 +131,19 @@ git branch -a
 ``
 git reset --hard
 ``
+### Gitlab first time
 
+```bash
+1)git init
+2)git remote add origin https://gitlab.com/myproject/bot
+3)git remote -v (for checking current repository)
+4)git add -A(add all files)
+5)git commit -m 'Added my project'
+6)git pull --rebase origin master
+7)git push  origin master
+```
+before pushing the code you need to pull from repository
+you can simply write like git pull --rebase origin master
 
 # Updating a feature branch
 
