@@ -1,5 +1,7 @@
 # Control de Versiones
 
+The git create the git folder when the git init command is launched
+
 ## Git Folder
 
 ![Screenshots](https://github.com/manujose94/gitmanual/blob/master/img/carpeta_git.PNG?raw=true)
@@ -9,7 +11,7 @@ The folder heads -> contain a local branches (name branch and the last commit re
 ![Screenshots](https://github.com/manujose94/gitmanual/blob/master/img/carpeta_git2.PNG?raw=true)
 
 File HEAD -> Refenrence to a branch tag or actual commit of workspace.
-(Cada vez que hacemos "git checkout" y cambiamos de rama, ese archivo se va actualizando.)
+(When "git checkout" is executed and the branch is changed, this file is updated)
 
 ### The Default State
 ![Screenshots](https://github.com/manujose94/gitmanual/blob/master/img/commit_branches.PNG?raw=true)
